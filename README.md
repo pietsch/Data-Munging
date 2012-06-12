@@ -34,6 +34,17 @@ In order to speed things up, the script invokes two instances of `dd` connected
 by a pipe.
 
 
+pdf-cryptcheck.sh
+-----------------
+
+This is a little test script which uses pdfinfo from the poppler-tools
+or xpdf-tools package to determine if a given PDF file is encrypted.
+If so, it returns a non-zero exit status. Usage example for a
+Bourne-like shell:
+
+`if pdf-cryptcheck.sh example.pdf; then echo OK; else echo DRM; fi`
+
+
 * * * * *
 *Christian Pietsch*
 
