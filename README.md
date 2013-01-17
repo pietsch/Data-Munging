@@ -49,10 +49,10 @@ repair_ahf_data.sh
 ------------------
 
 This script will not be very useful as it is (unless you receive bibliographic
-data in a peculiar CSV-like bibliographic format from AHF Munich). Perhaps it
-can serve as an example on how to embed AWK and R code into a BASH script, and
-how to export data files from R in a format that is readable by Excel (and of
-course OpenOffice/LibreOffice and the excellent Gnumeric).
+data in a peculiar CSV-like format from AHF Munich). Perhaps it can serve as an
+example on how to embed AWK and R code into a BASH script, and how to export
+data files from R in a format that is readable by Excel (and of course
+OpenOffice/LibreOffice and the excellent Gnumeric).
 
 
 * * * * *
