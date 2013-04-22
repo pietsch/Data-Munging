@@ -3,7 +3,7 @@
 ## purpose: clean up pseudo-csv files from AHF
 ## author: Christian Pietsch <cpietsch@uni-bielefeld> http://purl.org/net/pietsch
 ## date: 2013-01-16
-## dependencies: awk, R with package xslx (requires Java), GNU sed, tr
+## dependencies: awk, R with package xlsx (requires Java), GNU sed, tr
 
 ## BEGIN customize
 FIELD_SEPARATOR='|'
@@ -49,6 +49,10 @@ library(\"xlsx\")
 write.xlsx(myDataFrame, file=\"$1.xlsx\")
 " | R --vanilla --slave
 }
+
+echo "Press enter to start processing all *.csv files in the current directory."
+echo "Otherwise, press CTRL-c to abort."
+read
 
 for infile in $INFILE_PATTERN
 do
