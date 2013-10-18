@@ -55,6 +55,14 @@ data files from R in a format that is readable by Excel (and of course
 OpenOffice/LibreOffice and the excellent Gnumeric).
 
 
+ocr4pdf.sh
+----------
+
+This script uses Tesseract to perform OCR on a given PDF file. Then
+hocr2pdf is used to embed the result in a new PDF file called like the
+source file with "ocr-" prepended.
+
+
 * * * * *
 *Christian Pietsch*
 
