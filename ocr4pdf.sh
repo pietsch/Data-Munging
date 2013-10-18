@@ -4,21 +4,21 @@
 ##          file.  The result is stored in one big PDF file called
 ##          like the source file with "ocr-" prepended.
 ##
-## author:  Christian Pietsch <http://purl.org/net/pietsch>
-##
 ## requirements: GNU/Linux, Tesseract 3.x, hocr2pdf (from the
 ##          exactimage package), Ghostscript, pdftk
 ##
-## usage:   Put all PDF files you want to OCR into a one directory.
-##          Then enter this directory and call this script.
+## author:  Christian Pietsch <http://purl.org/net/pietsch>, 2013-10-18
 
 if [ $# != 2 ]
 then
   echo "Usage: $(basename $0) LANG INPUT"
-  echo -n "Where LANG is the language (and script) of your documents, "
-  echo "e.g. deu-frak for German in blackletter script."
-  tesseract --list-langs 2>&1 | tr '\n' ' '
   echo
+  echo "Where LANG is the language (and script) of your document,"
+  echo "e.g. deu-frak for German in blackletter script or eng for English,"
+  echo "and INPUT is the name of your input PDF file."
+  echo "The ouput will be stored in a file called like ocr-INPUT."
+  tesseract --list-langs 2>&1 | tr '\n' ' '
+  echo; echo
   exit -1
 fi
 
