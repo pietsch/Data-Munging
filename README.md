@@ -55,6 +55,13 @@ data files from R in a format that is readable by Excel (and of course
 OpenOffice/LibreOffice and the excellent Gnumeric).
 
 
+medra_onix2datacite/
+--------------------
+
+An XSLT stylesheet for converting ONIX XML to DataCite XML. May it help you
+migrate from mEDRA to DataCite.
+
+
 * * * * *
 *Christian Pietsch*
 

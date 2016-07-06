@@ -1,0 +1,1 @@
+for i in *xml ; do curl --head http://doi.org/$(xmlstarlet sel -t -v "//*[local-name() = 'identifier' and @identifierType='DOI']" "$i") | awk '/^Location: / {print $2}' > "${i%.xml}.url" && echo "OK: $i" || echo "FAILED to resolve $i" ; done
