@@ -60,6 +60,13 @@ medra_onix2datacite/
 
 An XSLT stylesheet for converting ONIX XML to DataCite XML. May it help you
 migrate from mEDRA to DataCite.
+=======
+ocr4pdf.sh
+----------
+
+This script uses Tesseract to perform OCR on a given PDF file. Then
+hocr2pdf is used to embed the result in a new PDF file called like the
+source file with "ocr-" prepended.
 
 
 * * * * *
